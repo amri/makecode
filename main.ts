@@ -1,6 +1,9 @@
 controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
     moveGhost()
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava0, function (sprite, location) {
+    game.over(false, effects.slash)
+})
 controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
     moveGhost()
 })
@@ -14,6 +17,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenEast, function (s
             tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 3))
         }
         if (levelNumber == 2) {
+            tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 3))
+        }
+        if (levelNumber == 3) {
             tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 3))
         }
     }
@@ -32,12 +38,11 @@ function changeLevel (levelNumber: number) {
     }
 }
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
-    tiles.setTileAt(tiles.getTileLocation(7, 3), sprites.dungeon.chestOpen)
     game.over(true, effects.confetti)
 })
 function moveGhost () {
-    ghostLocationX = randint(1, 8)
-    ghostLocationY = randint(1, 5)
+    ghostLocationX += randint(-1, 1)
+    ghostLocationY += randint(-1, 1)
     tiles.placeOnTile(ghost, tiles.getTileLocation(ghostLocationX, ghostLocationY))
 }
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenWest, function (sprite, location) {
@@ -74,6 +79,8 @@ mySprite = sprites.create(img`
     . . . f f . . f f . . f f . . . 
     `, SpriteKind.Player)
 ghost = sprites.create(assets.image`ghost`, SpriteKind.Enemy)
+ghost.setStayInScreen(true)
+ghost.setBounceOnWall(true)
 ghostLocationX = 1
 ghostLocationY = 1
 tiles.placeOnTile(ghost, tiles.getTileLocation(ghostLocationX, ghostLocationY))
