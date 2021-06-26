@@ -86,7 +86,7 @@
     "level5": {
         "id": "level5",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAwYTAwMDcwMDA0MDUwNTBkMGQwNjA2MDYwNTA3MGMwMTAxMDEwMjAyMDIwMTAxMGIwYzAxMDEwMTAyMDIwMjAxMDEwYjBjMDEwMTAxMDIwMjAyMDEwMTAzMGMwMjAyMDEwMTAxMDEwMTAxMGUwYzAyMDIwMTAxMDEwMTAxMDEwYjA5MGEwYTBmMGYwYTBhMGEwYTA4MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "data": "MTAwYTAwMDcwMDA0MDUwNTBkMGQwNjA2MDYwNTA3MGMwMTAxMDEwMjAyMDIwMTEwMGIwYzAxMTEwMTAyMDIwMjAxMDEwYjBjMDEwMTAxMTIwMjAyMDExMTAzMGMwMjEyMDEwMTAxMDEwMTAxMGUwYzAyMDIwMTAxMDExMTAxMDEwYjA5MGEwYTBmMGYwYTBhMGEwYTA4MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
         "tileset": [
             "myTiles.transparency16",
             "sprites.dungeon.floorLight2",
@@ -103,7 +103,10 @@
             "sprites.dungeon.greenOuterWest1",
             "sprites.dungeon.greenOuterNorth2",
             "sprites.dungeon.greenOuterEast2",
-            "sprites.dungeon.greenOuterSouth2"
+            "sprites.dungeon.greenOuterSouth2",
+            "sprites.dungeon.chestClosed",
+            "sprites.dungeon.floorLight4",
+            "sprites.dungeon.floorLight5"
         ],
         "displayName": "level5"
     },

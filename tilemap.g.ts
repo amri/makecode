@@ -76,7 +76,7 @@ namespace myTiles {
 . 2 . . . . . . 2 . 
 `, [myTiles.transparency16,sprites.skillmap.islandTile4,sprites.dungeon.doorOpenEast,sprites.castle.saplingOak,sprites.castle.tileGrass1,sprites.swamp.swampTile2], TileScale.Sixteen);
             case "level5":
-            case "level5":return tiles.createTilemap(hex`0a0007000405050d0d06060605070c01010102020201010b0c01010102020201010b0c0101010202020101030c02020101010101010e0c02020101010101010b090a0a0f0f0a0a0a0a08`, img`
+            case "level5":return tiles.createTilemap(hex`0a0007000405050d0d06060605070c01010102020201100b0c01110102020201010b0c0101011202020111030c02120101010101010e0c02020101011101010b090a0a0f0f0a0a0a0a08`, img`
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -84,7 +84,7 @@ namespace myTiles {
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-`, [myTiles.transparency16,sprites.dungeon.floorLight2,sprites.dungeon.hazardLava0,sprites.dungeon.doorOpenEast,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorth1,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth0,sprites.dungeon.greenOuterEast0,sprites.dungeon.greenOuterWest1,sprites.dungeon.greenOuterNorth2,sprites.dungeon.greenOuterEast2,sprites.dungeon.greenOuterSouth2], TileScale.Sixteen);
+`, [myTiles.transparency16,sprites.dungeon.floorLight2,sprites.dungeon.hazardLava0,sprites.dungeon.doorOpenEast,sprites.dungeon.greenOuterNorthWest,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenOuterNorth1,sprites.dungeon.greenOuterNorthEast,sprites.dungeon.greenOuterSouthWest,sprites.dungeon.greenOuterSouthEast,sprites.dungeon.greenOuterSouth0,sprites.dungeon.greenOuterEast0,sprites.dungeon.greenOuterWest1,sprites.dungeon.greenOuterNorth2,sprites.dungeon.greenOuterEast2,sprites.dungeon.greenOuterSouth2,sprites.dungeon.chestClosed,sprites.dungeon.floorLight4,sprites.dungeon.floorLight5], TileScale.Sixteen);
         }
         return null;
     })
