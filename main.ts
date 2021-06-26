@@ -40,6 +40,9 @@ function changeLevel (levelNumber: number) {
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
     game.over(true, effects.confetti)
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava1, function (sprite, location) {
+    game.over(false, effects.slash)
+})
 function moveGhost () {
     ghostLocationX += randint(-1, 1)
     ghostLocationY += randint(-1, 1)
