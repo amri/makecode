@@ -13,6 +13,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenEast, function (s
         if (levelNumber == 1) {
             tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 3))
         }
+        if (levelNumber == 2) {
+            tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 3))
+        }
     }
 })
 function changeLevel (levelNumber: number) {
@@ -23,6 +26,9 @@ function changeLevel (levelNumber: number) {
     }
     if (levelNumber == 2) {
         tiles.setTilemap(tilemap`level3`)
+    }
+    if (levelNumber == 3) {
+        tiles.setTilemap(tilemap`level5`)
     }
 }
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
